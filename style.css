@@ -1,0 +1,134 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #0F62FE;
+}
+
+#head-text{
+    margin-top: 50px;
+    margin-left: 10px;
+    color: #0F62FE;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 40%;
+    top: 30%;
+    left: 50%;
+    background: white;
+    border-radius: 8px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%, -50%); 
+}
+
+#newtask {
+    position: relative;
+    padding: 30px 20px ;
+}
+
+#newtask input {
+   width: 75%;
+   height: 45px;
+   color: #111111;
+   padding: 12px;
+   border: 2px solid #3986de;
+   border-radius: 8px;
+
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: #0D75EC;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    background-color: #0F62FE;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+}
+
+#tasks {
+    position: absolute;
+    border-radius: 8px;
+    width: 100%;
+    padding: 30px 20px;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.tasks.overflow{
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.taks::-webkit-scrollbar{
+    width: 10px;
+}
+.taks::-webkit-scrollbar-track{
+    background: #BAE6FF;
+    border-radius: 25px;
+
+}
+.taks::-webkit-scrollbar-thumbs{
+    background: #0D75EC;
+    border-radius: 25px;
+}
+
+.task {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 8px;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+}
+.delete {
+    right: -5px;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    transform-origin: top right;
+    transition: transform 0.2s ease ;
+    z-index: 10;
+}
+
+.task label {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.task label input {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+}
+
+.task label p.checked{
+    text-decoration: line-through;
+ }
