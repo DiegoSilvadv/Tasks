@@ -7,12 +7,12 @@
 
 1. Clone o repositório:
     ```bash
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/DiegoSilvadv/Tasks.git
     ```
 
 2. Navegue até o diretório do projeto:
     ```bash
-    cd nome-do-repositorio
+    cd tasks
     ```
 
 3. Execute o `index.html` em seu navegador.
